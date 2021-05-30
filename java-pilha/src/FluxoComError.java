@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class Fluxo {
+public class FluxoComError {
 
 	
 	public static void main(String[] args) {
@@ -22,9 +22,8 @@ public class Fluxo {
 	}
 	
 	public static void metodo2() {
-		System.out.println("Inicio do metodo2");
-		
-		throw new MinhaExcecao("Deu muito errado");
-		//System.out.println("Fim do metodo2");
+		System.out.println("Ini do metodo 2");
+		metodo2();
+		System.out.println("Fim do metodo 2");
 	}
 }
